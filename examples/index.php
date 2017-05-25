@@ -22,7 +22,7 @@
     </header>
     <div class="container">
         <div class="row">
-            <header class='col-xs-6 col-xs-offset-3'>
+            <header class='col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1'>
                 <?php $index = $get->item("index");?>
                 <div class="jumbotron">
                      <?php echo $index['text'];?>
