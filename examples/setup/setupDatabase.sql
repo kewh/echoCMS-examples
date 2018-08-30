@@ -193,7 +193,9 @@ CREATE TABLE `imagesTable` (
   `height` int(11) DEFAULT NULL,
   `width` int(11) DEFAULT NULL,
   `alt` varchar(255) DEFAULT NULL,
-  `web_images` tinyint(1) NOT NULL DEFAULT '0'
+  `web_images` tinyint(1) NOT NULL DEFAULT '0',
+  `prime_aspect_ratio` varchar(20) DEFAULT NULL
+
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO `imagesTable` (`id`, `content_id`, `src`, `seq`, `mx1`, `mx2`, `my1`, `my2`, `lx1`, `lx2`, `ly1`, `ly2`, `px1`, `px2`, `py1`, `py2`, `sx1`, `sx2`, `sy1`, `sy2`, `height`, `width`, `alt`, `web_images`) VALUES
@@ -269,7 +271,8 @@ CREATE TABLE `pendingImagesTable` (
   `height` int(11) DEFAULT NULL,
   `width` int(11) DEFAULT NULL,
   `alt` varchar(255) DEFAULT NULL,
-  `web_images` tinyint(1) NOT NULL DEFAULT '0'
+  `web_images` tinyint(1) NOT NULL DEFAULT '0',
+  `prime_aspect_ratio` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
